@@ -4,7 +4,7 @@
   "description": "This is a simple CRUD based MERN application. It contains only basic implementation of the CRUD operations via APIs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "development": "nodemon"
   },
   "author": "Ravi Ranjan",
   "license": "ISC",
