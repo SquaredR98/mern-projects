@@ -11,7 +11,7 @@ export default () => {
                     <title>Dev Env Setup MERN</title>
                 </head>
                 <body>
-                    <div id="root"></div>
+                    <div id="root">Helllo World</div>
                     <script type="text/javascript" src="/dist/bundle.js"></script>
                 </body>
             </html>`;
