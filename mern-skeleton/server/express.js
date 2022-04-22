@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser';
 import compress from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
+import userRoutes from './routes/user.routes';
 
 import Template from '../template';
 
@@ -16,8 +17,6 @@ app.use(compress());
 app.use(helmet());
 app.use(cors());
 
-app.get('/', (req, res) => {
-	res.status(200).send(Template());
-});
+app.use('/', userRoutes);
 
 export default app;
