@@ -5,6 +5,7 @@ import compress from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
 import userRoutes from './routes/user.routes';
+import authRoutes from './routes/auth.routes';
 
 import Template from '../template';
 
@@ -18,5 +19,6 @@ app.use(helmet());
 app.use(cors());
 
 app.use('/', userRoutes);
+app.use('/', authRoutes);
 
 export default app;
